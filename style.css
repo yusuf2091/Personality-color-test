@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 60%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Header */
+  header h1 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 20px 0;
+  }
+  
+  .progress {
+    height: 10px;
+    background: #4caf50;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Quiz */
+  #quiz .question {
+    margin: 20px 0;
+  }
+  
+  #quiz .answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  
+  .answer-btn {
+    background: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .answer-btn:hover {
+    background: #45a049;
+  }
+  
+  /* Results */
+  .hidden {
+    display: none;
+  }
+  
+  canvas {
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .retry-btn {
+    background: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .retry-btn:hover {
+    background: #e53935;
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personality Color Test</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Personality Color Test</h1>
+      <p>Discover which color represents your personality the most!</p>
+    </header>
+
+    <div class="progress-bar">
+      <div id="progress" class="progress"></div>
+    </div>
+
+    <div id="quiz">
+      <div class="question">
+        <h2 id="question-text">Question goes here</h2>
+      </div>
+      <div class="answers">
+        <button class="answer-btn" onclick="selectAnswer('red')">Answer 1</button>
+        <button class="answer-btn" onclick="selectAnswer('blue')">Answer 2</button>
+        <button class="answer-btn" onclick="selectAnswer('green')">Answer 3</button>
+        <button class="answer-btn" onclick="selectAnswer('yellow')">Answer 4</button>
+      </div>
+    </div>
+
+    <div id="results" class="hidden">
+      <h2>Your Personality Results</h2>
+      <canvas id="resultsChart"></canvas>
+      <p id="result-text"></p>
+      <button class="retry-btn" onclick="restartQuiz()">Retake Test</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
